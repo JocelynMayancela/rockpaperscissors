@@ -11,11 +11,10 @@
 $("#shoot").click(function(){
 let choice = $("#input").val();
 $("#userChoice").text(choice);
+
 });
 
-if (choice="paper"){
-    $("#result").text("You Lost");
-});
+
 
 
 
