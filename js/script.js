@@ -13,8 +13,10 @@ let choice = $("#input").val();
 $("#userChoice").text(choice);
 
 });
-
-
-
-
-
+var random=[
+"Rock","Paper","Scissors"
+];
+$("#shoot").click(function(){
+let computerchoice=random[Math.floor(Math.random()*random.length)];
+$("#computerChoice").text(computerchoice);
+});
