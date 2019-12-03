@@ -7,3 +7,7 @@
   justify-content:space-between;
   
 }
+
+input{
+text-transform: lowercase;
+}

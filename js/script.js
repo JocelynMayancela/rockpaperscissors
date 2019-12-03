@@ -20,10 +20,12 @@ let computerchoice=random[Math.floor(Math.random()*random.length)];
 console.log(computerchoice)
 $("#computerChoice").text(computerchoice);
 
-if (choice === "Paper" && computerChoice === "Rock" ){
+if (choice === "Paper"|| "paper" && computerChoice === "Rock" ){
 $("#results").html("User Wins");
-}else if(choice=== "Rock" && computerChoice === "Paper" ){
+
+}else if(choice === "Rock" && computerChoice === "Paper" ){
     $("#results").html("Computer Wins");
+    
 }else{
     $("#results").html("Tie");
 }
