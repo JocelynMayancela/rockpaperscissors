@@ -23,15 +23,22 @@ $("#computerChoice").text(computerchoice);
 if (choice === "Paper"|| "paper" && computerChoice === "Rock" ){
 $("#results").html("User Wins");
 
-}else if(choice === "Rock" && computerChoice === "Paper" ){
+}else if(choice==="Paper" || "paper" && computerChoice ==="Scissors"){
+    $("#results").html("Computer Wins");
+
+
+}
+ else if(choice === "Rock" && computerChoice === "Paper" ){
     $("#results").html("Computer Wins");
     
-}else{
+}else if (choice === "Scissors" && computerChoice === "Paper") {
+    $("#results").html("User Wins");
+
+}if (choice===computerChoice){
     $("#results").html("Tie");
 }
+
 });
-
-
 
 });
 
